@@ -60,6 +60,17 @@ li {
 .header__link[title]:hover {
 	color: var(--blue);
 }
+.header__current-link::after {
+	content: ' ';
+	display: block;
+	height: 4px;
+	bottom: 0;
+	left: 0;
+	background-color: var(--blue);
+	transform: translateY(29px);
+	border-radius: 2px;
+	pointer-events: none;
+}
 .list-style > li {
 	list-style-type: none;
 }
