@@ -60,7 +60,7 @@ li {
 .header__link[title]:hover {
 	color: var(--blue);
 }
-.header__current-link::after {
+.header__link-current::after {
 	content: ' ';
 	display: block;
 	height: 4px;
