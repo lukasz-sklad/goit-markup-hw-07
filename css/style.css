@@ -39,6 +39,13 @@ li {
 	color: var(--black);
 	font-weight: 500;
 	text-decoration: none;
+
+}
+.footer__link {
+	color: var(--white);
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 26px;
 }
 .contacts__link-s, .footer__link-s {
 	display: flex;
@@ -50,14 +57,13 @@ li {
 	color: var(--blue);
 }
 .link-blue:hover,
-.header__link:hover {
+.header__link {
 	color: var(--blue);
 }
-
-.header__link[title]:focus {
+.header__link, .footer__link[title]:focus {
 	color: var(--black);
 }
-.header__link[title]:hover {
+.header__link, .footer__link[title]:hover {
 	color: var(--blue);
 }
 .header__link-current::after {
@@ -93,7 +99,7 @@ li {
 	line-height: 1.193;
 	letter-spacing: 0.03em;
 }
-.logo-style-footer {
+.footer__logo-style  {
 	font-family: 'Raleway';
 	color: var(--white);
 	font-size: 26px;
@@ -101,10 +107,9 @@ li {
 	line-height: 1.193;
 	letter-spacing: 0.03em;
 }
-.logo-style-footer:hover {
+.footer__logo-style:hover {
 	color: var(--white);
 }
-
 .header__logo-style:hover {
 	color: var(--black);
 }
@@ -174,7 +179,7 @@ li {
 	flex-direction: column;
 	padding: 94px 0 94px 0;
 }
-.services-header {
+.team__title, .services__title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.166666666666667;
@@ -182,17 +187,17 @@ li {
 	color: var(--black);
 	margin: 0px 0 50px 0;
 }
-.services-li {
+.services__title-li {
 	display: flex;
 	flex-direction: row;
 	gap: 30px;
 	margin: 0;
 	justify-content: center;
 }
-.service-item {
+.service__title-item {
 	position: relative;
 }
-.img-label {
+.services__img-label {
 	display: block;
 	position: absolute;
 	bottom: 0;
@@ -245,13 +250,13 @@ li {
 	align-items: center;
 	flex-direction: column;
 }
-.team-li {
+.team__title-li {
 	display: flex;
 	flex-direction: row;
 	gap: 30px;
 	justify-content: center;
 }
-.team-card {
+.team__card {
 	width: 270px;
 	height: 428px;
 	background-color: var(--white);
@@ -260,14 +265,14 @@ li {
 	border-radius: 0px 0px 4px 4px;
 	text-align: var(--text-center);
 }
-.team-name {
+.team__name {
 	color: var(--black);
 	margin: 30px 0 10px 0;
 	line-height: 1.1875;
 	font-size: 16px;
 	font-weight: 500;
 }
-.team-p {
+.team_name-job {
 	color: var(--grey);
 	margin: 0 0 30px 0;
 	line-height: 1.1875;
@@ -288,7 +293,7 @@ li {
 	font-weight: 400;
 }
 
-.partners-header {
+.partners__header {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.166666666666667;
@@ -403,21 +408,21 @@ li {
 	margin-left: -10px;
 	gap: 10px;
 }
-.partners {
+.partners__list {
 	display: flex;
 	flex-direction: row;
 	gap: 30px;
 	padding-bottom: 94px;
 	padding-left: 15px;
 }
-.icons-partners {
+.partners__icons {
 	width: 170px;
 	height: 92px;
 	border: 1px solid var(--icongrey);
 	border-radius: 4px;
 	fill: var(--icongrey);
 }
-.icons-partners:hover {
+.partners__icons:hover {
 	fill: var(--blue);
 	border-color: var(--blue);
 }
@@ -429,7 +434,7 @@ li {
 	padding: 60px 0;
 	margin-top: 60px;
 }
-.footer-container {
+.footer__container {
 	color: var(--white);
 	display: flex;
 	flex-direction: row;
@@ -449,20 +454,17 @@ li {
 	justify-content: flex-start;
 	align-items: flex-end;
 }
-.footer-link-li {
+.footer__link-li {
 	list-style: none;
 	padding: 0;
 }
-.footer-link-li li {
+.footer__link-li li {
 	margin: 9px 0 9px 0;
 }
 .address-text {
 	color: var(--white);
 	margin: 20px 0 0 0;
 	font-style: normal;
-}
-.footer-container-social {
-	margin-top: 72px;
 }
 .social-cont {
 	display: flex;
@@ -475,7 +477,7 @@ li {
 	display: flex;
 	gap: 10px;
 }
-.footer-social-icons {
+.footer__social-icons {
 	fill: var(--white);
 	background-color: rgba(255, 255, 255, 10%);
 	border-radius: 50%;
@@ -484,20 +486,20 @@ li {
 	height: 44px;
 	cursor: pointer;
 }
-.footer-social-icons:hover,
-.footer-social-icons:focus {
+.footer__social-icons:hover,
+.footer__social-icons:focus {
 	background-color: var(--blue);
 }
 /* footer */
 /* newsletter */
-.footer-newsletter {
+.footer__newsletter {
 	margin-left: 78px;
 }
-.form-newsletter {
+.newsletter__form {
 	display: flex;
 	align-items: center;
 }
-.input-newsletter {
+.newsletter__input {
 	width: 358px;
 	height: 50px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
@@ -510,14 +512,14 @@ li {
 	padding: 15px 16px;
 	outline: none;
 }
-.footer-header {
+.footer__newsletter-header {
 	font-weight: 700;
 	line-height: 1.14;
 	text-transform: uppercase;
 	color: var(--white);
 	margin-bottom: 20px;
 }
-.btn-newsletter {
+.newsletter__btn {
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -537,7 +539,7 @@ li {
 	padding: 10px 0 10px 42px;
 	cursor: pointer;
 }
-.icon-btn-newsletter {
+.newsletter__icon-btn {
 	margin-left: 24px;
 }
 /* newsletter */
@@ -571,7 +573,7 @@ li {
 	visibility: hidden;
 	transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg) skew(40deg, 40deg);
 }
-.header-modal {
+.modal__header {
 	position: relative;
 	margin: 0 0 10px 0;
 	font-weight: 700;
@@ -581,20 +583,20 @@ li {
 	color: var(--black);
 	padding-top: 30px;
 }
-.form-modal {
+.modal__form {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	padding: 0px 40px 0px 40px;
 }
-.label-modal {
+.modal__label {
 	display: block;
 	font-size: 12px;
 	line-height: 1.17;
 	letter-spacing: 0.01em;
 	color: var(--grey);
 }
-.input-modal {
+.modal__input-modal {
 	width: 448px;
 	height: 40px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
@@ -604,36 +606,36 @@ li {
 	padding: 12px 12px 12px 42px;
 	transition: border-color 250ms var(--transition);
 }
-.input-modal-icon {
+.modal__input-modal-icon {
 	fill: var(--black);
 	transition: fill 250ms var(--transition);
 }
-.form-highlight:hover > .input-modal,
-.form-highlight:focus-within > .input-modal,
-.form-highlight:hover > .input-modal-text,
-.form-highlight:focus-within > .input-modal-text,
-.form-highlight:hover > .input-modal-icon,
-.form-highlight:focus-within > .input-modal-icon {
+.modal__form-highlight:hover > .modal__input-modal,
+.modal__form-highlight:focus-within > .modal__input-modal,
+.modal__form-highlight:hover > .modal__input-modal-text,
+.modal__form-highlight:focus-within > .modal__input-modal-text,
+.modal__form-highlight:hover > .modal__input-modal-icon,
+.modal__form-highlight:focus-within > .modal__input-modal-icon {
 	fill: var(--blue);
 	border-color: var(--blue);
 	outline: none;
 }
-.icon-per {
+.modal__icon-per {
 	position: absolute;
 	top: 97px;
 	left: 55px;
 }
-.icon-tel {
+.modal__icon-tel {
 	position: absolute;
 	top: 164px;
 	left: 55px;
 }
-.icon-mail {
+.modal__icon-mail {
 	position: absolute;
 	top: 233px;
 	left: 55px;
 }
-.input-modal-text {
+.modal__input-modal-text {
 	width: 448px;
 	height: 120px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
@@ -644,25 +646,25 @@ li {
 	padding: 12px 16px;
 	transition: border-color 250ms var(--transition);
 }
-.user-agreements {
+.agreements-user {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 30px;
 }
-.agreement-text {
+/* .agreement-text {
 	padding-left: 8px;
-}
-.agreement-link {
+} */
+.checkbox__agreement-link {
 	color: var(--blue);
 	text-decoration: underline;
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.agreement-link:hover,
-.agreement-link:focus {
+.checkbox__agreement-link:hover,
+.checkbox__agreement-link:focus {
 	color: var(--blue);
 }
-.btn-modal-send {
+.checkbox__send {
 	width: 200px;
 	height: 50px;
 	background-color: var(--blue);
@@ -682,7 +684,7 @@ li {
 	cursor: pointer;
 }
 /* checkbox */
-.user-checkbox-label {
+.checkbox__label {
 	display: flex;
 	flex-direction: row;
 	gap: 8px;
@@ -690,21 +692,21 @@ li {
 	position: relative;
 	padding: 10px 0 20px 15px;
 }
-.checkbox {
+.checkbox__user {
 	width: 16px;
 	height: 15px;
 	left: 15px;
 	opacity: 0;
 	pointer-events: visible;
 }
-.user-checkbox-label input:checked ~ .checkbox-svg {
+.checkbox__label input:checked ~ .checkbox__svg {
 	background-color: var(--blue);
 	fill: var(--blue);
 }
-.vector {
+.checkbox__vector {
 	fill: var(--white);
 }
-.checkbox-svg {
+.checkbox__svg {
 	width: 16px;
 	height: 15px;
 	left: 15px;
@@ -716,11 +718,11 @@ li {
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-svg:hover {
+.checkbox__svg:hover {
 	fill: var(--blue);
 }
 /* X */
-.btn {
+.modal__btn {
 	position: absolute;
 	top: 8px;
 	right: 8px;
@@ -731,7 +733,7 @@ li {
 	border-radius: 50%;
 	cursor: pointer;
 }
-.btn:hover {
+.modal__btn:hover {
 	color: var(--blue);
 	border-color: var(--blue);
 }
