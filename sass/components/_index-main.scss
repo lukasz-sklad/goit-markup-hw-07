@@ -1,0 +1,208 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.no-margin {
+	margin: 0;
+}
+.no-padding {
+	padding: 0;
+}
+.main__top-nice {
+	width: 100%;
+	background-color: $background-footer;
+}
+.top {
+	background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+		url('../images/portfolio.jpg');
+	background-repeat: no-repeat;
+	width: 1600px;
+	background-size: auto;
+	color: $primary-color;
+	display: flex;
+	gap: 30px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 200px 0;
+	&-text {
+		font-size: 44px;
+		font-weight: 900;
+		text-align: $center-top;
+		line-height: 1.364;
+		letter-spacing: 0.06em;
+	}
+}
+.card {
+	padding: 94px 0 0 0;
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	justify-content: center;
+	&__title {
+		font-weight: 700;
+		color: $logo-color;
+		margin: 0 0 10px 0;
+		font-size: 14px;
+		line-height: 1.145;
+	}
+	&__text {
+		color: $primary-text;
+		line-height: 0.03em;
+		line-height: 1.71;
+		width: 270px;
+		margin: 0;
+	}
+}
+.services {
+	align-items: center;
+	flex-direction: column;
+	padding: 94px 0 94px 0;
+	&__title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.166666666666667;
+		text-align: $center-top;
+		color: $logo-color;
+		margin: 0px 0 50px 0;
+	}
+}
+.team__title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.166666666666667;
+	text-align: $center-top;
+	color: $logo-color;
+	margin: 0px 0 50px 0;
+}
+.services__title-li {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	margin: 0;
+	justify-content: center;
+}
+.service__title-item {
+	position: relative;
+}
+.services__img-label {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	font-weight: 700;
+	line-height: 1.14;
+	text-align: $center-top;
+	text-transform: uppercase;
+	padding: 27px 0px;
+	color: $primary-color;
+	background-color: rgba(47, 48, 58, 0.8);
+}
+/* Services section */
+.button-port:hover {
+	color: $primary-color;
+	background-color: $hover-text;
+	cursor: pointer;
+}
+.button-index {
+	display: inline-block;
+	padding: 16px 32px;
+	border-radius: 4px;
+	border-style: none;
+	background-color: $hover-text;
+	color: $primary-color;
+	font-family: sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: 700;
+	cursor: pointer;
+	transition-property: background-color;
+	transition-duration: 2s;
+	&:hover {
+		color: $hover-text;
+		background-color: $primary-color;
+		border-style: none;
+		border-radius: 4px;
+		font-weight: 700;
+		font-size: 16px;
+		cursor: pointer;
+	}
+}
+.team-background {
+	background-color: $background-card;
+	padding: 94px 0;
+}
+.team {
+	align-items: center;
+	flex-direction: column;
+	&__title-li {
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+		justify-content: center;
+	}
+}
+.team__card {
+	width: 270px;
+	height: 428px;
+	background-color: $primary-color;
+	margin: 0;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	text-align: $center-top;
+}
+.team__name {
+	color: $logo-color;
+	margin: 30px 0 10px 0;
+	line-height: 1.1875;
+	font-size: 16px;
+	font-weight: 500;
+    &-job {
+        color: $primary-text;
+        margin: 0 0 30px 0;
+        line-height: 1.1875;
+        font-size: 16px;
+    }
+}
+.member-social-icon {
+	fill: $icon-background;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	&:hover,
+	&:focus {
+		background-color: $hover-text;
+		fill: white;
+	}
+}
+.member-social {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 16px;
+	margin-left: 30px;
+	gap: 10px;
+}
+.product-card-header {
+	margin: 20px 0 4px 24px;
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+}
+.product-card-text {
+	color: $primary-text;
+	margin: 0 0 0 24px;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: 400;
+}
+.partners__header {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.166666666666667;
+	text-align: $center-top;
+	color: $logo-color;
+	margin: 95px 0 50px 0;
+}

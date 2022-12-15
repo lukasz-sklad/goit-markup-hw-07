@@ -1,2 +1,17 @@
+@import './utils/colors';
+@import './utils/resets';
+@import './utils/fonts';
+@import './utils/mixins';
 @import './utils/variables';
-@import './utils/_nested'
+@import './components/header';
+@import './components/footer';
+@import './components/index-main';
+@import './components/portfolio-main';
+@import './components/modal';
+
+body {
+	color: $primary-text;
+}
+.wrapper {
+	margin: 0;
+}
