@@ -25,6 +25,9 @@
 	&:hover {
 		color: $primary-color;
 	}
+    &-color {
+        color: $hover-text;
+    }
 }
 .footer__link {
 	color: $primary-color;

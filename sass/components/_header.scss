@@ -1,4 +1,3 @@
-
 .header {
 	align-items: center;
 	gap: 93px;
@@ -61,11 +60,11 @@
 	font-weight: 700;
 	line-height: 1.193;
 	letter-spacing: 0.03em;
-    &__logo-style:hover {
-        color: $logo-color;
-    }
 }
-.header__logo-style-color, .footer__logo-style-color {
+.header__logo-style:hover {
+    color: $logo-color;
+}
+.header__logo-style-color {
 	color: $hover-text;
 }
 .header__nav-style {

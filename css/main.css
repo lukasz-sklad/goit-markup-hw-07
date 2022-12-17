@@ -138,11 +138,12 @@ table {
   line-height: 1.193;
   letter-spacing: 0.03em;
 }
-.header__logo-style__logo-style:hover {
+
+.header__logo-style:hover {
   color: #000;
 }
 
-.header__logo-style-color, .footer__logo-style-color {
+.header__logo-style-color {
   color: #2196f3;
 }
 
@@ -188,6 +189,9 @@ table {
 }
 .footer__logo-style:hover {
   color: #fff;
+}
+.footer__logo-style-color {
+  color: #2196f3;
 }
 
 .footer__link {
