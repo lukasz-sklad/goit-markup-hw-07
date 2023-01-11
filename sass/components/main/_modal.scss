@@ -28,7 +28,6 @@
     &__button {
         @extend %button;
         position: absolute;
-        padding: 0;
         right: 0.8rem;
         top: 0.8rem;
         width: 3rem;

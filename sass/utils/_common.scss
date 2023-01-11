@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+ }
 html {
   font-family: $main-font-family;
   font-size: 62.5%;
@@ -31,9 +35,6 @@ img {
 }
 %list {
   list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -68,10 +69,6 @@ img {
   &:hover::before,
   &:focus::before {
     opacity: 1;
-  }
-  &:hover > .icon,
-  &:focus > .icon {
-    fill: $font-light-color;
   }
   &:hover > .icon,
   &:focus > .icon {
