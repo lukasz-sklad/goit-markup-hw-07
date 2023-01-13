@@ -3,6 +3,19 @@
 	margin-top: -3rem;
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
+	&__title {
+		margin-bottom: 1rem;
+		font-size: 1.4rem;
+		line-height: 1.14286;
+		text-transform: uppercase;
+		font-weight: 800;
+	}
+	&__description {
+		font-size: 1.4rem;
+		line-height: 1.71;
+		letter-spacing: 0.03em;
+		color: $font-main-color;
+	}
 	&__item {
 		max-width: 27rem;
 		margin-top: 3rem;
@@ -26,18 +39,6 @@
 			background-color: $background-light-color;
 			border-radius: 0.4rem;
 		}
-		&__title {
-			margin-bottom: 1rem;
-			font-size: 1.4rem;
-			line-height: 1.14286;
-			text-transform: uppercase;
-			font-weight: 800;
-		}
-		&__description {
-			font-size: 1.4rem;
-			line-height: 1.71;
-			letter-spacing: 0.03em;
-			color: $font-main-color;
-		}
+		
 	}
 }

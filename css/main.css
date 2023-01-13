@@ -693,6 +693,19 @@ img {
   margin-left: -1.5rem;
   margin-right: -1.5rem;
 }
+.peculiarities__title {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.14286;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.peculiarities__description {
+  font-size: 1.4rem;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
 .peculiarities__item {
   max-width: 27rem;
   margin-top: 3rem;
@@ -721,19 +734,6 @@ img {
   margin-bottom: 3rem;
   background-color: #f5f4fa;
   border-radius: 0.4rem;
-}
-.peculiarities__icon__title {
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
-  line-height: 1.14286;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-.peculiarities__icon__description {
-  font-size: 1.4rem;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 
 .our-works {
